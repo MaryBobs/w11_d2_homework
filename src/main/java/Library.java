@@ -24,4 +24,8 @@ public class Library {
         return this.capacity;
     }
 
+    public Book removeBook() {
+        return this.collection.remove(0);
+    }
+
 }
