@@ -17,5 +17,11 @@ public class LibraryTest {
     public void libraryStartsWithNoBooks() {
         assertEquals(0, library.countBooks());
     }
+
+    @Test
+    public void canAddBook() {
+        library.addBook(book);
+        assertEquals(1, library.countBooks());
+    }
 }
 
