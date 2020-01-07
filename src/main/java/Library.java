@@ -15,10 +15,13 @@ public class Library {
     }
 
     public void addBook(Book book) {
+        if (this.countBooks() < this.capacity) {
         this.collection.add(book);
+        }
     }
 
     public int getCapacity() {
         return this.capacity;
     }
+
 }
